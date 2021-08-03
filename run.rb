@@ -9,3 +9,8 @@ puts plant_2.grow # методы объекта
 puts plant_1.grow
 puts plant_3.grow
 puts Plant.grow # методы класа(вызываеться на всех растениях)
+
+puts 'Input plant:'
+text = gets.chomp
+plant = Plant.new(text)
+puts plant.grow

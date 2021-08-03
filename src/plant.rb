@@ -10,7 +10,7 @@ class Plant
   end
 
   def self.grow
-    'all plants'
+    'ai am class'
   end
 
   def grow
@@ -18,6 +18,8 @@ class Plant
       'a tree'
     elsif grass.include?(type)
       'a grass'
+    elsif seaweed.include?(type)
+      'a seaweed'
     else
       'unknown'
     end
@@ -31,5 +33,9 @@ class Plant
 
   def grass
     %w[лютик ромашка роза лилия]
+  end
+
+  def seaweed
+    %w[эгокропила линея остреопсис ундария перестая]
   end
 end
